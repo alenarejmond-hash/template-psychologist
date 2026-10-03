@@ -19,27 +19,121 @@ const InstagramIcon = ({ className }) => (
 const CONTENT = {
   bgImage: '/bg-psychologist.webp', // ФОН: файл в папке public
   avatar: '/avatar-psychologist.webp', // АВАТАР: файл в папке public
-  badge: 'Терапия',
-  name1: 'Алена',
-  name2: 'СВЕТЛАЯ',
-  role: 'Клинический Психолог',
-  status: 'Онлайн',
   username: '@psy_svetplaya',
-  subUsername: 'Бережный подход',
-  stat1Title: 'Практика',
-  stat1Value: '12 лет',
-  stat2Title: 'Прием',
-  stat2Value: 'МСК / Web',
-  quote1: 'Здесь безопасно быть собой.',
-  quote2: 'Начнем путь к гармонии вместе.',
   tgLink: 'https://t.me/твой_юзернейм',
   tgChannelLink: 'https://t.me/твой_канал',
   waLink: 'https://wa.me/79990000000',
   instLink: 'https://instagram.com/твой_юзернейм',
+  
+  RU: {
+    badge: 'Терапия',
+    name1: 'Алена',
+    name2: 'СВЕТЛАЯ',
+    role: 'Клинический Психолог',
+    status: 'Онлайн',
+    subUsername: 'Бережный подход',
+    stat1Title: 'Практика',
+    stat1Value: '12 лет',
+    stat2Title: 'Прием',
+    stat2Value: 'Мск / Web',
+    quote1: 'Здесь безопасно быть собой.',
+    quote2: 'Начнем путь к гармонии вместе.',
+    servicesTitle: 'Грани компетенций',
+    service1: 'Тревога и эмоциональное выгорание',
+    service2: 'Кризисы в отношениях и личные границы',
+    service3: 'Поиск опоры и самооценка',
+    educationTitle: 'Метод и образование',
+    edu1Title: 'Диплом МГУ',
+    edu1Desc: 'Клиническая психология. Фундаментальное профильное образование и высокие стандарты этики.',
+    edu2Title: 'КПТ / Гештальт-терапия',
+    edu2Desc: 'Доказательные методы работы. Более 300 часов личной терапии и регулярной супервизии.',
+    contactsTitle: 'Связаться и читать',
+    contactWa: 'Написать в WhatsApp',
+    contactTg: 'Написать в Telegram',
+    contactTgCh: 'Мой Telegram-канал',
+    contactInsta: 'Блог в Instagram',
+    shareTitle: 'Поделиться визиткой',
+    shareDesc: 'Дайте отсканировать QR-код или отправьте ссылку напрямую.',
+    copyBtn: 'Копировать',
+    copiedBtn: 'Скопировано!',
+    sendBtn: 'Отправить',
+    shareApiTitle: 'Моя цифровая визитка',
+    shareApiText: 'Привет! Вот моя визитка с контактами:'
+  },
+  EN: {
+    badge: 'Therapy',
+    name1: 'Alena',
+    name2: 'SVETLAYA',
+    role: 'Clinical Psychologist',
+    status: 'Online',
+    subUsername: 'Gentle Approach',
+    stat1Title: 'Experience',
+    stat1Value: '12 years',
+    stat2Title: 'Consultations',
+    stat2Value: 'Msk / Web',
+    quote1: 'Here, it is safe to be yourself.',
+    quote2: 'Let\'s start the journey to harmony together.',
+    servicesTitle: 'Areas of Expertise',
+    service1: 'Anxiety and Emotional Burnout',
+    service2: 'Relationship Crises and Personal Boundaries',
+    service3: 'Finding Support and Self-Esteem',
+    educationTitle: 'Method & Education',
+    edu1Title: 'MSU Diploma',
+    edu1Desc: 'Clinical psychology. Fundamental specialized education and high ethical standards.',
+    edu2Title: 'CBT / Gestalt Therapy',
+    edu2Desc: 'Evidence-based practices. Over 300 hours of personal therapy and regular supervision.',
+    contactsTitle: 'Connect & Follow',
+    contactWa: 'Message on WhatsApp',
+    contactTg: 'Message on Telegram',
+    contactTgCh: 'My Telegram Channel',
+    contactInsta: 'Instagram Blog',
+    shareTitle: 'Share Business Card',
+    shareDesc: 'Let someone scan the QR code or send the link directly.',
+    copyBtn: 'Copy',
+    copiedBtn: 'Copied!',
+    sendBtn: 'Send',
+    shareApiTitle: 'My Digital Business Card',
+    shareApiText: 'Hi! Here is my digital business card:'
+  },
+  AM: {
+    badge: 'Թերապիա',
+    name1: 'Ալյոնա',
+    name2: 'ՍՎԵՏԼԱՅԱ',
+    role: 'Կլինիկական Հոգեբան',
+    status: 'Առցանց',
+    subUsername: 'Հոգատար մոտեցում',
+    stat1Title: 'Փորձ',
+    stat1Value: '12 տարի',
+    stat2Title: 'Ընդունելություն',
+    stat2Value: 'Մոսկվա / Web',
+    quote1: 'Այստեղ ապահով է լինել ինքդ քեզ հետ:',
+    quote2: 'Սկսենք ներդաշնակության ուղին միասին:',
+    servicesTitle: 'Մասնագիտացումներ',
+    service1: 'Տագնապ և էմոցիոնալ այրում',
+    service2: 'Ճգնաժամեր հարաբերություններում և անձնական սահմաններ',
+    service3: 'Հենարանի որոնում և ինքնագնահատական',
+    educationTitle: 'Մեթոդ և Կրթություն',
+    edu1Title: 'ՄՊՀ դիպլոմ',
+    edu1Desc: 'Կլինիկական հոգեբանություն: Հիմնարար մասնագիտական կրթություն և էթիկայի բարձր չափանիշներ:',
+    edu2Title: 'ԿՎԹ / Գեշտալտ-թերապիա',
+    edu2Desc: 'Ապացուցողական մեթոդներ: Ավելի քան 300 ժամ անձնական թերապիա և կանոնավոր սուպերվիզիա:',
+    contactsTitle: 'Կապ և Բլոգ',
+    contactWa: 'Գրել WhatsApp-ում',
+    contactTg: 'Գրել Telegram-ում',
+    contactTgCh: 'Իմ Telegram ալիքը',
+    contactInsta: 'Ինստագրամյան բլոգ',
+    shareTitle: 'Կիսվել այցեքարտով',
+    shareDesc: 'Թույլ տվեք սկանավորել QR կոդը կամ ուղարկեք հղումը անմիջապես:',
+    copyBtn: 'Պատճենել',
+    copiedBtn: 'Պատճենված է!',
+    sendBtn: 'Ուղարկել',
+    shareApiTitle: 'Իմ թվային այցեքարտը',
+    shareApiText: 'Ողջույն: Ահա իմ այցեքարտը կոնտակտներով՝'
+  }
 };
 
 // ==========================================
-// 🎨 ГЛОБАЛЬНЫЕ СТИЛИ (Очищено, оставлено только необходимое)
+// 🎨 ГЛОБАЛЬНЫЕ СТИЛИ 
 // ==========================================
 const globalStyles = `
   :root {
@@ -79,8 +173,6 @@ const globalStyles = `
   .card-backface-hidden {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
   }
 
   /* Искры */
@@ -105,51 +197,68 @@ const globalStyles = `
       spark-wander var(--wt) linear 0.8s forwards;
   }
   
-  /* Эффект сгорания бумаги */
-  @keyframes burn-mask-reveal {
-    0% { -webkit-mask-position: 100% 0%; mask-position: 100% 0%; }
-    100% { -webkit-mask-position: 0% 100%; mask-position: 0% 100%; }
+  /* Эффект сгорания бумаги - Оптимизация для мобильных */
+  @keyframes simple-fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
-  @keyframes burn-fire-scan {
-    0% { background-position: 100% 0%; opacity: 0; }
-    5% { opacity: 1; }
-    95% { opacity: 1; }
-    100% { background-position: 0% 100%; opacity: 0; }
+
+  @media (max-width: 639px) {
+    .burn-fire-edge {
+      display: none;
+    }
+    .smooth-mask-wipe {
+      opacity: 0;
+      animation: simple-fade-in 1.5s ease-out forwards;
+    }
   }
-  .smooth-mask-wipe {
-    -webkit-mask-image: linear-gradient(225deg, transparent 47%, rgba(0,0,0,0.6) 49%, black 51%);
-    mask-image: linear-gradient(225deg, transparent 47%, rgba(0,0,0,0.6) 49%, black 51%);
-    -webkit-mask-size: 300% 300%;
-    mask-size: 300% 300%;
-    -webkit-mask-position: 100% 0%;
-    mask-position: 100% 0%;
-    animation: burn-mask-reveal 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    will-change: mask-position, -webkit-mask-position;
-  }
-  .burn-fire-edge {
-    background: 
-      linear-gradient(224deg, 
-        transparent 48.5%, 
-        rgba(20, 5, 0, 0.95) 49%, 
-        var(--burn-c1) 49.5%, 
-        var(--burn-c2) 50%, 
-        var(--burn-c3) 50.2%,
-        transparent 51%
-      ),
-      linear-gradient(226deg, 
-        transparent 48.5%, 
-        rgba(20, 5, 0, 0.95) 49%, 
-        var(--burn-c1) 49.5%, 
-        var(--burn-c2) 50%, 
-        var(--burn-c3) 50.2%,
-        transparent 51%
-      );
-    background-size: 300% 300%;
-    background-position: 100% 0%;
-    mix-blend-mode: normal;
-    filter: drop-shadow(0 0 8px var(--burn-c2)) blur(0.5px);
-    animation: burn-fire-scan 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    will-change: background-position, opacity;
+
+  @media (min-width: 640px) {
+    @keyframes burn-mask-reveal {
+      0% { -webkit-mask-position: 100% 0%; mask-position: 100% 0%; }
+      100% { -webkit-mask-position: 0% 100%; mask-position: 0% 100%; }
+    }
+    @keyframes burn-fire-scan {
+      0% { background-position: 100% 0%; opacity: 0; }
+      5% { opacity: 1; }
+      95% { opacity: 1; }
+      100% { background-position: 0% 100%; opacity: 0; }
+    }
+    .smooth-mask-wipe {
+      -webkit-mask-image: linear-gradient(225deg, transparent 47%, rgba(0,0,0,0.6) 49%, black 51%);
+      mask-image: linear-gradient(225deg, transparent 47%, rgba(0,0,0,0.6) 49%, black 51%);
+      -webkit-mask-size: 300% 300%;
+      mask-size: 300% 300%;
+      -webkit-mask-position: 100% 0%;
+      mask-position: 100% 0%;
+      animation: burn-mask-reveal 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      will-change: mask-position, -webkit-mask-position;
+    }
+    .burn-fire-edge {
+      background: 
+        linear-gradient(224deg, 
+          transparent 48.5%, 
+          rgba(20, 5, 0, 0.95) 49%, 
+          var(--burn-c1) 49.5%, 
+          var(--burn-c2) 50%, 
+          var(--burn-c3) 50.2%,
+          transparent 51%
+        ),
+        linear-gradient(226deg, 
+          transparent 48.5%, 
+          rgba(20, 5, 0, 0.95) 49%, 
+          var(--burn-c1) 49.5%, 
+          var(--burn-c2) 50%, 
+          var(--burn-c3) 50.2%,
+          transparent 51%
+        );
+      background-size: 300% 300%;
+      background-position: 100% 0%;
+      mix-blend-mode: normal;
+      filter: drop-shadow(0 0 8px var(--burn-c2)) blur(0.5px);
+      animation: burn-fire-scan 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      will-change: background-position, opacity;
+    }
   }
 
   /* Анимация сканирования Dock панели (Горизонтальная) */
@@ -165,7 +274,6 @@ const globalStyles = `
 // 🪄 КОМПОНЕНТ ЭФФЕКТА СГОРАНИЯ
 // ==========================================
 const BurnRevealImage = ({ src, className, style, imgClassName = "" }) => {
-  // Тема огня жестко зафиксирована под "Психолога" (Teal/Бирюзовый)
   const theme = { 
     c1: 'rgba(13, 148, 136, 0.9)', 
     c2: 'rgba(45, 212, 191, 1)', 
@@ -193,44 +301,62 @@ const BurnRevealImage = ({ src, className, style, imgClassName = "" }) => {
 // ==========================================
 // 🧘‍♀️ КОМПОНЕНТ ВИЗИТКИ (ПСИХОЛОГ)
 // ==========================================
-const PsychologistCard = () => {
+const PsychologistCard = ({ lang = 'RU' }) => {
   const [view, setView] = useState('profile');
+  const t = CONTENT[lang] || CONTENT.RU;
 
   return (
     <>
       {/* ЛИЦЕВАЯ СТОРОНА */}
-      <div className="absolute inset-0 w-full h-full card-backface-hidden rounded-[2.5rem] shadow-[0_20px_50px_rgba(13,148,136,0.4)] overflow-hidden bg-black text-white flex flex-col p-6 group-hover:shadow-[0_20px_80px_rgba(20,184,166,0.6)] transition-shadow duration-700">
-        <div className="absolute inset-0 bg-gradient-to-tr from-teal-500 via-cyan-500 to-emerald-400 opacity-70 mix-blend-screen"></div>
-        
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-teal-950/50 to-transparent"></div>
-        
-        <BurnRevealImage src={CONTENT.bgImage} className="opacity-50" />
-        
-        <div className="relative z-10 flex flex-col h-full justify-between">
-          <div className="flex justify-between items-start">
-            <div className="bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-teal-500/30 flex items-center gap-2">
-              <Heart className="w-4 h-4 text-rose-400" />
-              <span className="text-xs font-bold tracking-wider uppercase text-teal-100">{CONTENT.badge}</span>
+      {}
+      <div 
+        className="absolute inset-0 w-full h-full card-backface-hidden rounded-[2.5rem] shadow-[0_20px_50px_rgba(13,148,136,0.4)] bg-black group-hover:shadow-[0_20px_80px_rgba(20,184,166,0.6)] transition-shadow duration-700"
+        style={{ 
+          transform: 'rotateY(0deg) translateZ(1px)', 
+          WebkitTransform: 'rotateY(0deg) translateZ(1px)'
+        }}
+      >
+        {/* Внутренний контейнер для жесткой обрезки контента, чтобы избежать протекания углов */}
+        <div 
+          className="absolute inset-0 w-full h-full rounded-[2.5rem] overflow-hidden text-white flex flex-col p-6"
+          style={{
+            clipPath: 'inset(0 round 2.5rem)',
+            WebkitClipPath: 'inset(0 round 2.5rem)',
+            WebkitMaskImage: '-webkit-radial-gradient(white, black)'
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-tr from-teal-500 via-cyan-500 to-emerald-400 opacity-70 mix-blend-normal sm:mix-blend-screen"></div>
+          
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-teal-950/50 to-transparent"></div>
+          
+          <BurnRevealImage src={CONTENT.bgImage} className="opacity-50" />
+          
+          <div className="relative z-10 flex flex-col h-full justify-between">
+            <div className="flex justify-between items-start">
+              <div className="bg-[#151515]/95 sm:bg-black/40 sm:backdrop-blur-md px-4 py-2 rounded-full border border-teal-500/30 flex items-center gap-2">
+                <Heart className="w-4 h-4 text-rose-400" />
+                <span className="text-xs font-bold tracking-wider uppercase text-teal-100">{t.badge}</span>
+              </div>
+              <Brain className="w-8 h-8 text-teal-200/80 drop-shadow-[0_0_10px_rgba(45,212,191,0.5)]" />
             </div>
-            <Brain className="w-8 h-8 text-teal-200/80 drop-shadow-[0_0_10px_rgba(45,212,191,0.5)]" />
-          </div>
 
-          <div>
-            <h2 className="text-3xl sm:text-4xl leading-tight font-serif font-medium mb-1 uppercase tracking-wide text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]">
-              {CONTENT.name1}
-              <br />
-              {CONTENT.name2}
-            </h2>
-            <div className="flex flex-wrap items-center gap-3 mt-2">
-              <p className="text-teal-300 font-bold text-xs uppercase tracking-[0.2em] border-l-2 border-emerald-500 pl-3">
-                {CONTENT.role}
-              </p>
-              <div className="flex items-center gap-1.5 bg-black/40 backdrop-blur-md px-2 py-1 rounded-full border border-teal-500/30">
-                <span className="relative flex h-1.5 w-1.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
-                </span>
-                <span className="text-[8px] font-bold uppercase tracking-wider text-emerald-100">{CONTENT.status}</span>
+            <div>
+              <h2 className="text-3xl sm:text-4xl leading-tight font-serif font-medium mb-1 uppercase tracking-wide text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]">
+                {t.name1}
+                <br />
+                {t.name2}
+              </h2>
+              <div className="flex flex-wrap items-center gap-3 mt-2">
+                <p className="text-teal-300 font-bold text-xs uppercase tracking-[0.2em] border-l-2 border-emerald-500 pl-3">
+                  {t.role}
+                </p>
+                <div className="flex items-center gap-1.5 bg-[#151515]/95 sm:bg-black/40 sm:backdrop-blur-md px-2 py-1 rounded-full border border-teal-500/30">
+                  <span className="relative flex h-1.5 w-1.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+                  </span>
+                  <span className="text-[8px] font-bold uppercase tracking-wider text-emerald-100">{t.status}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -238,107 +364,124 @@ const PsychologistCard = () => {
       </div>
 
       {/* ОБРАТНАЯ СТОРОНА */}
-      <div className="absolute inset-0 w-full h-full card-backface-hidden rounded-[2.5rem] shadow-[0_20px_50px_rgba(13,148,136,0.4)] overflow-hidden bg-[#020806] flex flex-col p-5 text-white" style={{ transform: 'rotateY(180deg)' }}>
-        
-        {/* Мягкие перекрывающие формы */}
-        <div className="absolute -top-10 -left-20 w-72 h-72 bg-teal-600/20 blur-[90px] rounded-full pointer-events-none mix-blend-screen"></div>
-        <div className="absolute top-1/2 -right-20 w-80 h-80 bg-emerald-700/15 blur-[100px] rounded-full pointer-events-none mix-blend-screen"></div>
-        <div className="absolute -bottom-20 left-10 w-64 h-64 bg-cyan-900/30 blur-[80px] rounded-full pointer-events-none mix-blend-screen"></div>
+      {}
+      <div 
+        className="absolute inset-0 w-full h-full card-backface-hidden rounded-[2.5rem] shadow-[0_20px_50px_rgba(13,148,136,0.4)] bg-[#020806]" 
+        style={{ 
+          transform: 'rotateY(180deg) translateZ(1px)',
+          WebkitTransform: 'rotateY(180deg) translateZ(1px)'
+        }}
+      >
+        {/* Внутренний контейнер для жесткой обрезки контента на обратной стороне */}
+        <div 
+          className="absolute inset-0 w-full h-full rounded-[2.5rem] overflow-hidden flex flex-col p-5 text-white"
+          style={{
+            clipPath: 'inset(0 round 2.5rem)',
+            WebkitClipPath: 'inset(0 round 2.5rem)',
+            WebkitMaskImage: '-webkit-radial-gradient(white, black)'
+          }}
+        >
+          {/* Мягкие перекрывающие формы */}
+          <div className="absolute -top-10 -left-20 w-72 h-72 bg-teal-600/20 blur-[90px] rounded-full pointer-events-none mix-blend-normal sm:mix-blend-screen"></div>
+          <div className="absolute top-1/2 -right-20 w-80 h-80 bg-emerald-700/15 blur-[100px] rounded-full pointer-events-none mix-blend-normal sm:mix-blend-screen"></div>
+          <div className="absolute -bottom-20 left-10 w-64 h-64 bg-cyan-900/30 blur-[80px] rounded-full pointer-events-none mix-blend-normal sm:mix-blend-screen"></div>
 
-        <div className="relative flex-1 w-full mb-14 overflow-hidden">
-          
-          {/* ПРОФИЛЬ */}
-          <div className={`absolute inset-0 flex flex-col items-center justify-center transition-all duration-500 ease-in-out ${view === 'profile' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'}`}>
-            <div className="w-16 h-16 rounded-full p-[2px] bg-gradient-to-b from-teal-400/40 to-emerald-600/10 mb-3 shadow-[0_0_25px_rgba(20,184,166,0.15)]">
-              <img src={CONTENT.avatar} alt={CONTENT.name1} className="w-full h-full object-cover rounded-full border-2 border-[#020806]" />
-            </div>
-            <h3 className="text-lg font-serif font-bold text-teal-50 tracking-wide">{CONTENT.username}</h3>
-            <p className="text-teal-500/80 text-[9px] mt-1.5 uppercase tracking-[0.25em] font-medium mb-6">{CONTENT.subUsername}</p>
+          <div className="relative flex-1 w-full mb-14 overflow-hidden">
             
-            <p className="font-serif text-teal-50/90 text-[13px] text-center leading-relaxed italic px-4 mb-8">
-              "{CONTENT.quote1} {CONTENT.quote2}"
-            </p>
-
-            <div className="flex justify-center items-center gap-4 w-full px-2">
-              <div className="bg-teal-900/20 border border-teal-500/20 rounded-2xl p-3.5 flex-1 text-center shadow-inner">
-                <p className="text-teal-100 font-bold text-lg">{CONTENT.stat1Value}</p>
-                <p className="text-[8px] text-teal-500/70 uppercase tracking-widest mt-1 font-bold">{CONTENT.stat1Title}</p>
+            {/* ПРОФИЛЬ */}
+            <div className={`absolute inset-0 flex flex-col items-center justify-center transition-all duration-500 ease-in-out ${view === 'profile' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'}`}>
+              <div className="w-16 h-16 rounded-full p-[2px] bg-gradient-to-b from-teal-400/40 to-emerald-600/10 mb-3 shadow-[0_0_25px_rgba(20,184,166,0.15)]">
+                <img src={CONTENT.avatar} alt={t.name1} className="w-full h-full object-cover rounded-full border-2 border-[#020806]" />
               </div>
-              <div className="bg-teal-900/20 border border-teal-500/20 rounded-2xl p-3.5 flex-1 text-center shadow-inner">
-                <p className="text-teal-100 font-bold text-lg">{CONTENT.stat2Value}</p>
-                <p className="text-[8px] text-teal-500/70 uppercase tracking-widest mt-1 font-bold">{CONTENT.stat2Title}</p>
+              <h3 className="text-lg font-serif font-bold text-teal-50 tracking-wide">{CONTENT.username}</h3>
+              <p className="text-teal-500/80 text-[9px] mt-1.5 uppercase tracking-[0.25em] font-medium mb-6">{t.subUsername}</p>
+              
+              <p className="font-serif text-teal-50/90 text-[13px] text-center leading-relaxed italic px-4 mb-8">
+                "{t.quote1} {t.quote2}"
+              </p>
+
+              <div className="flex justify-center items-center gap-4 w-full px-2">
+                <div className="bg-teal-900/20 border border-teal-500/20 rounded-2xl p-3.5 flex-1 text-center shadow-inner">
+                  <p className="text-teal-100 font-bold text-lg">{t.stat1Value}</p>
+                  <p className="text-[8px] text-teal-500/70 uppercase tracking-widest mt-1 font-bold">{t.stat1Title}</p>
+                </div>
+                <div className="bg-teal-900/20 border border-teal-500/20 rounded-2xl p-3.5 flex-1 text-center shadow-inner">
+                  <p className="text-teal-100 font-bold text-lg">{t.stat2Value}</p>
+                  <p className="text-[8px] text-teal-500/70 uppercase tracking-widest mt-1 font-bold">{t.stat2Title}</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* УСЛУГИ */}
-          <div className={`absolute inset-0 flex flex-col justify-center transition-all duration-500 ease-in-out px-1 ${view === 'services' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'}`}>
-             <h4 className="text-teal-400 text-[10px] uppercase tracking-[0.2em] font-bold text-center mb-5">Грани компетенций</h4>
-             <div className="flex flex-col gap-3">
-               <div className="bg-teal-900/20 backdrop-blur-sm border border-teal-500/20 rounded-2xl p-4 shadow-inner flex items-center gap-3">
-                 <Brain className="w-5 h-5 text-teal-400 shrink-0" />
-                 <span className="font-serif text-[11px] text-teal-50 font-medium tracking-wide">Тревога и эмоциональное выгорание</span>
-               </div>
-               <div className="bg-teal-900/20 backdrop-blur-sm border border-teal-500/20 rounded-2xl p-4 shadow-inner flex items-center gap-3">
-                 <Heart className="w-5 h-5 text-rose-400 shrink-0" />
-                 <span className="font-serif text-[11px] text-teal-50 font-medium tracking-wide">Кризисы в отношениях и личные границы</span>
-               </div>
-               <div className="bg-teal-900/20 backdrop-blur-sm border border-teal-500/20 rounded-2xl p-4 shadow-inner flex items-center gap-3">
-                 <Compass className="w-5 h-5 text-emerald-400 shrink-0" />
-                 <span className="font-serif text-[11px] text-teal-50 font-medium tracking-wide">Поиск опоры и самооценка</span>
-               </div>
-             </div>
-          </div>
-
-          {/* ОБРАЗОВАНИЕ */}
-          <div className={`absolute inset-0 flex flex-col justify-center transition-all duration-500 ease-in-out px-1 ${view === 'education' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'}`}>
-             <h4 className="text-teal-400 text-[10px] uppercase tracking-[0.2em] font-bold text-center mb-5">Метод и образование</h4>
-             <div className="flex flex-col gap-3">
-               <div className="bg-teal-900/20 backdrop-blur-sm border border-teal-500/20 rounded-2xl p-4 shadow-inner">
-                 <div className="flex items-center gap-2 mb-2">
-                   <Award className="w-4 h-4 text-teal-300" />
-                   <span className="font-serif text-[12px] text-teal-50 font-medium tracking-wide">Диплом МГУ</span>
+            {/* УСЛУГИ */}
+            <div className={`absolute inset-0 flex flex-col justify-center transition-all duration-500 ease-in-out px-1 ${view === 'services' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'}`}>
+               <h4 className="text-teal-400 text-[10px] uppercase tracking-[0.2em] font-bold text-center mb-5">{t.servicesTitle}</h4>
+               <div className="flex flex-col gap-3">
+                 <div className="bg-[#151515]/95 sm:bg-teal-900/20 sm:backdrop-blur-sm border border-teal-500/20 rounded-2xl p-4 shadow-inner flex items-center gap-3">
+                   <Brain className="w-5 h-5 text-teal-400 shrink-0" />
+                   <span className="font-serif text-[11px] text-teal-50 font-medium tracking-wide">{t.service1}</span>
                  </div>
-                 <p className="text-[10px] text-teal-100/60 leading-relaxed font-light">Клиническая психология. Фундаментальное профильное образование и высокие стандарты этики.</p>
-               </div>
-               <div className="bg-teal-900/20 backdrop-blur-sm border border-teal-500/20 rounded-2xl p-4 shadow-inner">
-                 <div className="flex items-center gap-2 mb-2">
-                   <Brain className="w-4 h-4 text-teal-300" />
-                   <span className="font-serif text-[12px] text-teal-50 font-medium tracking-wide">КПТ / Гештальт-терапия</span>
+                 <div className="bg-[#151515]/95 sm:bg-teal-900/20 sm:backdrop-blur-sm border border-teal-500/20 rounded-2xl p-4 shadow-inner flex items-center gap-3">
+                   <Heart className="w-5 h-5 text-rose-400 shrink-0" />
+                   <span className="font-serif text-[11px] text-teal-50 font-medium tracking-wide">{t.service2}</span>
                  </div>
-                 <p className="text-[10px] text-teal-100/60 leading-relaxed font-light">Доказательные методы работы. Более 300 часов личной терапии и регулярной супервизии.</p>
+                 <div className="bg-[#151515]/95 sm:bg-teal-900/20 sm:backdrop-blur-sm border border-teal-500/20 rounded-2xl p-4 shadow-inner flex items-center gap-3">
+                   <Compass className="w-5 h-5 text-emerald-400 shrink-0" />
+                   <span className="font-serif text-[11px] text-teal-50 font-medium tracking-wide">{t.service3}</span>
+                 </div>
                </div>
-             </div>
-          </div>
-          
-          {/* КОНТАКТЫ */}
-          <div className={`absolute inset-0 flex flex-col justify-center transition-all duration-500 ease-in-out px-1 ${view === 'contacts' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'}`}>
-            <h4 className="text-teal-400 text-[10px] uppercase tracking-[0.2em] font-bold text-center mb-5">Связаться и читать</h4>
-            <div className="flex flex-col gap-2.5 w-full mt-1">
-               <a href={CONTENT.waLink} target="_blank" rel="noopener noreferrer" className="no-tilt bg-teal-900/20 backdrop-blur-sm border border-teal-500/20 rounded-2xl p-3.5 shadow-inner flex items-center gap-3 hover:bg-teal-900/40 transition-colors group">
-                 <Phone className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
-                 <span className="font-serif text-[12px] text-teal-50 tracking-wide">Написать в WhatsApp</span>
-               </a>
-               <a href={CONTENT.tgLink} target="_blank" rel="noopener noreferrer" className="no-tilt bg-teal-900/20 backdrop-blur-sm border border-teal-500/20 rounded-2xl p-3.5 shadow-inner flex items-center gap-3 hover:bg-teal-900/40 transition-colors group">
-                 <MessageCircle className="w-5 h-5 text-blue-400 group-hover:scale-110 transition-transform" />
-                 <span className="font-serif text-[12px] text-teal-50 tracking-wide">Написать в Telegram</span>
-               </a>
-               <a href={CONTENT.tgChannelLink} target="_blank" rel="noopener noreferrer" className="no-tilt bg-teal-900/20 backdrop-blur-sm border border-teal-500/20 rounded-2xl p-3.5 shadow-inner flex items-center gap-3 hover:bg-teal-900/40 transition-colors group">
-                 <Globe className="w-5 h-5 text-teal-400 group-hover:scale-110 transition-transform" />
-                 <span className="font-serif text-[12px] text-teal-50 tracking-wide">Мой Telegram-канал</span>
-               </a>
-               <a href={CONTENT.instLink} target="_blank" rel="noopener noreferrer" className="no-tilt bg-teal-900/20 backdrop-blur-sm border border-teal-500/20 rounded-2xl p-3.5 shadow-inner flex items-center gap-3 hover:bg-teal-900/40 transition-colors group">
-                 <InstagramIcon className="w-5 h-5 text-pink-500 group-hover:scale-110 transition-transform" />
-                 <span className="font-serif text-[12px] text-teal-50 tracking-wide">Блог в Instagram</span>
-               </a>
             </div>
-          </div>
 
+            {/* ОБРАЗОВАНИЕ */}
+            <div className={`absolute inset-0 flex flex-col justify-center transition-all duration-500 ease-in-out px-1 ${view === 'education' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'}`}>
+               <h4 className="text-teal-400 text-[10px] uppercase tracking-[0.2em] font-bold text-center mb-5">{t.educationTitle}</h4>
+               <div className="flex flex-col gap-3">
+                 <div className="bg-[#151515]/95 sm:bg-teal-900/20 sm:backdrop-blur-sm border border-teal-500/20 rounded-2xl p-4 shadow-inner">
+                   <div className="flex items-center gap-2 mb-2">
+                     <Award className="w-4 h-4 text-teal-300" />
+                     <span className="font-serif text-[12px] text-teal-50 font-medium tracking-wide">{t.edu1Title}</span>
+                   </div>
+                   <p className="text-[10px] text-teal-100/60 leading-relaxed font-light">{t.edu1Desc}</p>
+                 </div>
+                 <div className="bg-[#151515]/95 sm:bg-teal-900/20 sm:backdrop-blur-sm border border-teal-500/20 rounded-2xl p-4 shadow-inner">
+                   <div className="flex items-center gap-2 mb-2">
+                     <Brain className="w-4 h-4 text-teal-300" />
+                     <span className="font-serif text-[12px] text-teal-50 font-medium tracking-wide">{t.edu2Title}</span>
+                   </div>
+                   <p className="text-[10px] text-teal-100/60 leading-relaxed font-light">{t.edu2Desc}</p>
+                 </div>
+               </div>
+            </div>
+            
+            {/* КОНТАКТЫ */}
+            <div className={`absolute inset-0 flex flex-col justify-center transition-all duration-500 ease-in-out px-1 ${view === 'contacts' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'}`}>
+              <h4 className="text-teal-400 text-[10px] uppercase tracking-[0.2em] font-bold text-center mb-5">{t.contactsTitle}</h4>
+              <div className="flex flex-col gap-2.5 w-full mt-1">
+                 <a href={CONTENT.waLink} target="_blank" rel="noopener noreferrer" className="no-tilt bg-[#151515]/95 sm:bg-teal-900/20 sm:backdrop-blur-sm border border-teal-500/20 rounded-2xl p-3.5 shadow-inner flex items-center gap-3 hover:bg-teal-900/40 transition-colors group">
+                   <Phone className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
+                   <span className="font-serif text-[12px] text-teal-50 tracking-wide">{t.contactWa}</span>
+                 </a>
+                 <a href={CONTENT.tgLink} target="_blank" rel="noopener noreferrer" className="no-tilt bg-[#151515]/95 sm:bg-teal-900/20 sm:backdrop-blur-sm border border-teal-500/20 rounded-2xl p-3.5 shadow-inner flex items-center gap-3 hover:bg-teal-900/40 transition-colors group">
+                   <MessageCircle className="w-5 h-5 text-blue-400 group-hover:scale-110 transition-transform" />
+                   <span className="font-serif text-[12px] text-teal-50 tracking-wide">{t.contactTg}</span>
+                 </a>
+                 <a href={CONTENT.tgChannelLink} target="_blank" rel="noopener noreferrer" className="no-tilt bg-[#151515]/95 sm:bg-teal-900/20 sm:backdrop-blur-sm border border-teal-500/20 rounded-2xl p-3.5 shadow-inner flex items-center gap-3 hover:bg-teal-900/40 transition-colors group">
+                   <Globe className="w-5 h-5 text-teal-400 group-hover:scale-110 transition-transform" />
+                   <span className="font-serif text-[12px] text-teal-50 tracking-wide">{t.contactTgCh}</span>
+                 </a>
+                 <a href={CONTENT.instLink} target="_blank" rel="noopener noreferrer" className="no-tilt bg-[#151515]/95 sm:bg-teal-900/20 sm:backdrop-blur-sm border border-teal-500/20 rounded-2xl p-3.5 shadow-inner flex items-center gap-3 hover:bg-teal-900/40 transition-colors group">
+                   <InstagramIcon className="w-5 h-5 text-pink-500 group-hover:scale-110 transition-transform" />
+                   <span className="font-serif text-[12px] text-teal-50 tracking-wide">{t.contactInsta}</span>
+                 </a>
+              </div>
+            </div>
+
+          </div>
         </div>
 
         {/* DOCK ПАНЕЛЬ */}
+        {}
         <div 
-          className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-[#020806]/60 backdrop-blur-xl py-1.5 px-3 rounded-full border border-teal-500/30 shadow-[0_10px_40px_rgba(20,184,166,0.3)] z-50 no-tilt cursor-default"
+          className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-[#151515]/95 sm:bg-[#020806]/60 sm:backdrop-blur-xl py-1.5 px-3 rounded-full border border-teal-500/30 shadow-[0_10px_40px_rgba(20,184,166,0.3)] z-50 no-tilt cursor-default"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="absolute top-1/2 -translate-y-1/2 w-6 h-6 bg-teal-400/40 rounded-full blur-[6px] shadow-[0_0_15px_rgba(45,212,191,0.6)] pointer-events-none z-0" style={{ animation: 'scan-horizontal 3s ease-in-out infinite' }}></div>
@@ -381,11 +524,11 @@ const App = () => {
   const audioCtxRef = useRef(null);
   const isFlippingRef = useRef(false);
 
-  // Настройки цвета темы под психолога
+  const t = CONTENT[lang] || CONTENT.RU;
+
   const glowColor = 'rgba(13,148,136,0.5)';
   const modalTheme = { bg: 'rgba(20,184,166,0.15)', border: 'rgba(20,184,166,0.3)', icon: 'text-teal-400' };
 
-  // Параллакс фона
   useEffect(() => {
     const handleGlobalMove = (e) => {
       const clientX = e.touches ? e.touches[0].clientX : e.clientX;
@@ -404,7 +547,6 @@ const App = () => {
     };
   }, []);
 
-  // 3D наклон
   const handlePointerMove = (e) => {
     if (isFlippingRef.current || !cardRef.current || isFlipped) return;
     
@@ -440,7 +582,6 @@ const App = () => {
     setGlare(prev => ({ ...prev, opacity: 0 }));
   };
 
-  // Звук переворота
   const playFlipSound = () => {
     try {
       const AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -467,7 +608,6 @@ const App = () => {
       osc.start(ctx.currentTime);
       osc.stop(ctx.currentTime + 0.15);
     } catch (e) {
-      // Игнорируем ошибки автоплея
     }
   };
 
@@ -519,8 +659,8 @@ const App = () => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Моя цифровая визитка',
-          text: 'Привет! Вот моя визитка с контактами:',
+          title: t.shareApiTitle,
+          text: t.shareApiText,
           url: window.location.href,
         });
       } catch (err) {}
@@ -539,8 +679,8 @@ const App = () => {
     const vcard = [
       'BEGIN:VCARD',
       'VERSION:3.0',
-      `FN:${CONTENT.name1} ${CONTENT.name2}`,
-      `TITLE:${CONTENT.role}`,
+      `FN:${t.name1} ${t.name2}`,
+      `TITLE:${t.role}`,
       phoneStr ? `TEL;TYPE=CELL,VOICE:${phoneStr}` : '',
       phoneStr ? `URL;TYPE=WhatsApp:https://wa.me/${phoneStr.replace('+', '')}` : '',
       `URL:${typeof window !== 'undefined' ? window.location.href : ''}`,
@@ -564,28 +704,29 @@ const App = () => {
 
       {/* Параллакс (Тематические цвета психолога - Бирюза/Изумруд) */}
       <div 
-        className="fixed top-1/4 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-[120px] pointer-events-none transition-transform duration-1000 ease-out"
+        className="fixed top-1/4 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-[120px] pointer-events-none transition-transform duration-1000 ease-out hidden sm:block"
         style={{ transform: `translate(${bgOffset.x}px, ${bgOffset.y}px)` }}
       ></div>
       <div 
-        className="fixed bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none transition-transform duration-1000 ease-out"
+        className="fixed bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none transition-transform duration-1000 ease-out hidden sm:block"
         style={{ transform: `translate(${bgOffset.x * 1.5}px, ${bgOffset.y * 1.5}px)` }}
       ></div>
 
       {/* Основной контейнер */}
-      <div className="w-full flex flex-col items-center relative z-40">
+      <div className="flex-1 w-full flex items-center justify-center min-h-0 relative z-40">
         
         {/* Карточка */}
         <div 
           ref={cardRef}
-          className="relative z-10 w-full aspect-[1/1.6] sm:aspect-[1/1.5] cursor-pointer group animate-float touch-none"
-          style={{ perspective: '1500px', maxWidth: 'min(22rem, 85vw, 55vh)' }}
+          className="relative z-10 w-full aspect-[1/1.6] sm:aspect-[1/1.5] cursor-pointer group animate-float touch-none @container"
+          style={{ perspective: '1500px', maxWidth: 'min(26rem, 94vw, 52dvh)' }}
           onClick={handleFlip}
           onMouseMove={handlePointerMove}
           onMouseLeave={handlePointerLeave}
           onTouchMove={handlePointerMove}
           onTouchEnd={handlePointerLeave}
         >
+          {}
           {sparks.map(spark => (
             <div
               key={spark.id}
@@ -610,6 +751,7 @@ const App = () => {
             />
           ))}
 
+          {}
           <div
             className="w-full h-full card-preserve-3d transition-transform duration-100 ease-out z-10 relative"
             style={{ transform: `rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)` }}
@@ -620,18 +762,31 @@ const App = () => {
             >
               <div 
                 className="absolute inset-0 rounded-[2.5rem] pointer-events-none sm:hidden card-backface-hidden" 
-                style={{ boxShadow: `0 0 60px ${glowColor}` }} 
+                style={{ 
+                  transform: 'rotateY(0deg) translateZ(0.5px)',
+                  WebkitTransform: 'rotateY(0deg) translateZ(0.5px)',
+                  boxShadow: `0 0 60px ${glowColor}` 
+                }} 
               />
               <div 
                 className="absolute inset-0 rounded-[2.5rem] pointer-events-none sm:hidden card-backface-hidden" 
-                style={{ transform: 'rotateY(180deg)', boxShadow: `0 0 60px ${glowColor}` }} 
+                style={{ 
+                  transform: 'rotateY(180deg) translateZ(0.5px)',
+                  WebkitTransform: 'rotateY(180deg) translateZ(0.5px)',
+                  boxShadow: `0 0 60px ${glowColor}` 
+                }} 
               />
 
-              <PsychologistCard />
+              <PsychologistCard lang={lang} />
 
+              {}
               <div 
                 className="absolute inset-0 w-full h-full rounded-[2.5rem] pointer-events-none transition-opacity duration-300 card-backface-hidden"
                 style={{
+                  transform: 'rotateY(0deg) translateZ(2px)',
+                  WebkitTransform: 'rotateY(0deg) translateZ(2px)',
+                  clipPath: 'inset(0 round 2.5rem)',
+                  WebkitClipPath: 'inset(0 round 2.5rem)',
                   background: `radial-gradient(farthest-corner circle at ${glare.x}% ${glare.y}%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 80%)`,
                   opacity: glare.opacity,
                   mixBlendMode: 'overlay',
@@ -641,7 +796,10 @@ const App = () => {
               <div 
                 className="absolute inset-0 w-full h-full rounded-[2.5rem] pointer-events-none transition-opacity duration-300 card-backface-hidden"
                 style={{
-                  transform: 'rotateY(180deg) translateZ(0)',
+                  transform: 'rotateY(180deg) translateZ(2px)',
+                  WebkitTransform: 'rotateY(180deg) translateZ(2px)',
+                  clipPath: 'inset(0 round 2.5rem)',
+                  WebkitClipPath: 'inset(0 round 2.5rem)',
                   background: `radial-gradient(farthest-corner circle at ${100 - glare.x}% ${glare.y}%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 80%)`,
                   opacity: glare.opacity,
                   mixBlendMode: 'overlay',
@@ -652,14 +810,15 @@ const App = () => {
           </div>
         </div>
 
+        {}
         {/* ПАНЕЛЬ КНОПОК */}
-        <div className="mt-8 sm:mt-10 flex items-center gap-3 sm:gap-4 bg-white/5 backdrop-blur-xl border border-white/10 p-2 rounded-full shadow-[0_10px_40px_rgba(0,0,0,0.5)] z-50 relative">
+        <div className="fixed bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 sm:gap-3 bg-[#181818]/95 sm:bg-white/5 sm:backdrop-blur-xl border border-white/10 p-1.5 rounded-full shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
           <div className="flex items-center gap-0.5 px-1">
             {['RU', 'AM', 'EN'].map((l) => (
               <button
                 key={l}
                 onClick={() => setLang(l)}
-                className={`relative px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest transition-all duration-500 ${lang === l ? 'text-white' : 'text-white/40 hover:text-white/80'}`}
+                className={`relative px-2.5 py-1 rounded-full text-[10px] font-bold tracking-widest transition-all duration-500 ${lang === l ? 'text-white' : 'text-white/40 hover:text-white/80'}`}
               >
                 {lang === l && (
                   <span className="absolute inset-0 bg-white/10 border border-white/20 rounded-full shadow-[inset_0_0_8px_rgba(255,255,255,0.1)] pointer-events-none"></span>
@@ -669,16 +828,16 @@ const App = () => {
             ))}
           </div>
 
-          <div className="w-px h-6 bg-white/20 mx-1"></div>
+          <div className="w-px h-5 bg-white/20 mx-0.5"></div>
 
           <button
             onClick={() => {
               if (typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(15);
               setShowShare(true);
             }}
-            className="p-2.5 rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-all duration-300"
+            className="p-2 rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-all duration-300"
           >
-            <QrCode className="w-5 h-5" />
+            <QrCode className="w-4 h-4" />
           </button>
 
           <button
@@ -686,22 +845,23 @@ const App = () => {
               if (typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(15);
               downloadVCard();
             }}
-            className="p-2.5 rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-all duration-300"
+            className="p-2 rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-all duration-300"
           >
-            <UserPlus className="w-5 h-5" />
+            <UserPlus className="w-4 h-4" />
           </button>
         </div>
 
       </div>
 
+      {}
       {/* МОДАЛЬНОЕ ОКНО ПОДЕЛИТЬСЯ */}
       {showShare && (
         <div 
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm transition-opacity animate-in fade-in duration-200" 
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-[#151515]/95 sm:bg-black/40 sm:backdrop-blur-sm transition-opacity animate-in fade-in duration-200" 
           onClick={() => setShowShare(false)}
         >
           <div 
-            className="backdrop-blur-3xl rounded-[2.5rem] p-6 sm:p-8 w-full max-w-sm flex flex-col items-center relative shadow-2xl animate-in zoom-in-95 duration-200 border" 
+            className="bg-[#151515] sm:bg-transparent sm:backdrop-blur-3xl rounded-[2.5rem] p-6 sm:p-8 w-full max-w-sm flex flex-col items-center relative shadow-2xl animate-in zoom-in-95 duration-200 border" 
             style={{ backgroundColor: modalTheme.bg, borderColor: modalTheme.border }}
             onClick={e => e.stopPropagation()}
           >
@@ -716,8 +876,8 @@ const App = () => {
               <QrCode className={`w-6 h-6 ${modalTheme.icon}`} />
             </div>
             
-            <h3 className="text-xl font-bold text-white mb-2 tracking-wide">Поделиться визиткой</h3>
-            <p className="text-sm text-white/60 text-center mb-6 leading-relaxed">Дайте отсканировать QR-код или отправьте ссылку напрямую.</p>
+            <h3 className="text-xl font-bold text-white mb-2 tracking-wide">{t.shareTitle}</h3>
+            <p className="text-sm text-white/60 text-center mb-6 leading-relaxed">{t.shareDesc}</p>
             
             <div className="bg-white p-4 rounded-3xl mb-6 shadow-[0_0_40px_rgba(255,255,255,0.15)] flex items-center justify-center">
               <img 
@@ -733,14 +893,14 @@ const App = () => {
                 className="flex-1 bg-black/20 hover:bg-black/40 border border-white/10 text-white font-medium py-3.5 px-4 rounded-2xl flex items-center justify-center gap-2 transition-colors text-sm"
               >
                 {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
-                {copied ? 'Скопировано!' : 'Копировать'}
+                {copied ? t.copiedBtn : t.copyBtn}
               </button>
               <button 
                 onClick={handleShare}
                 className="flex-1 bg-white/10 hover:bg-white/20 border border-white/10 text-white font-bold py-3.5 px-4 rounded-2xl flex items-center justify-center gap-2 transition-colors text-sm"
               >
                 <Share2 className="w-4 h-4" />
-                Отправить
+                {t.sendBtn}
               </button>
             </div>
           </div>
